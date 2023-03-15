@@ -7,6 +7,6 @@ with customers as (
 
     from `dbt-tutorial`.jaffle_shop.customers
 
-),
+)
 
-select * from customers,
+select * from customers
