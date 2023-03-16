@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: customers
+  - name: dim_customers
     columns:
       - name: customer_id
         tests:
@@ -34,5 +34,5 @@ models:
         tests: 
           - not_null
           - relationships:
-            to: ref('stg_customers')
-            field: customer_id 
+              to: ref('stg_customers')
+              field: customer_id 
