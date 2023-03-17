@@ -12,3 +12,9 @@ sources:
         freshness:
           warn_after: {count: 12, period: hour}
           error_after: {count: 24, period: hour}
+        columns:
+          - name: id
+            description: The primary key for payments.
+            tests:
+              - unique
+              - not_null
