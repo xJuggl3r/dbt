@@ -8,3 +8,5 @@ select
     created as created_at
 from {{ source('stripe', 'payment') }}
 
+{{ limit_data_in_dev('order_id', 10)}}
+
